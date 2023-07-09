@@ -1,0 +1,7 @@
+.main {
+  padding: 1px 90px;
+  min-height: 62vh;
+  @media screen and (width <= 768px) {
+    padding: 1rem;
+  }
+}
