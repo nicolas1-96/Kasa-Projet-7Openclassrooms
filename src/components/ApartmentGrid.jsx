@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./ApartmentGrid.scss";
 import ApartmentCard from "./ApartmentCard.jsx";
-import { useApartments } from "./../hooks/useApartments.jsx";
+import { useLogements } from "../hooks/useLogements.jsx";
 
 function ApartmentGrid() {
-  const apartments = useApartments();
+  const logements = useLogements();
   return (
     <div className="grid">
-      {apartments.map((apartment) => (
+      {logements.map((logement) => (
         <ApartmentCard
-         title={apartment.title}
-          imageUrl={apartment.cover}
-          id={apartment.id}
-          key={apartment.id}
+         title={logement.title}
+          imageUrl={logement.cover}
+          id={logement.id}
+          key={logement.id}
         />
       ))}
     </div>

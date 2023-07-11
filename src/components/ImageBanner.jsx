@@ -14,7 +14,7 @@ export function ImageBanner(props) {
   const moveToNext = () => {
     setCurrentPicture((currentPicture + 1) % pictures.length);
   };
-
+//si la newcurrentpicture est inférieure à zéro, notre nouvelle valeur doit être -1
   const moveToPrevious = () => {
     const newCurrentPicture = currentPicture - 1;
     if (newCurrentPicture < 0) {
@@ -27,7 +27,7 @@ export function ImageBanner(props) {
   const arePicturesAvailable = () => {
     return pictures && pictures.length > 0;
   };
-
+//si no hay picture en ese caso nos devuelves una imagen al azar  si no nos envias picture.map(pic)
   const getCarouselOrDefaultImage = () => {
     if (!arePicturesAvailable()) {
       return <img src="https://picsum.photos/800" className="show" alt="" />;

@@ -13,7 +13,7 @@
   margin-bottom: 30px;
   & > * {
     width: 100%;
-    max-width: 20rem;
+   
   }
 }
 
@@ -21,6 +21,8 @@
   .grid {
     justify-content: center;
     background-color: colors.$grid-background-light;
+    padding: 0;
+   
     
   }
 }

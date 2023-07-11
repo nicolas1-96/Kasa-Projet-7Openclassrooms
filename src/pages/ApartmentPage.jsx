@@ -3,12 +3,12 @@ import { DescriptionPanel } from "../components/DescriptionPanel";
 import "./ApartmentPage.scss";
 import { ImageBanner } from "../components/ImageBanner";
 import { ApartmentHeader } from "../components/ApartmentHeader";
-import { useApartment } from "../hooks/useApartment";
+import { useLogement } from "../hooks/useLogement";
 import Main from "../layout/Main";
 import {  Outlet } from "react-router-dom";
 
 function ApartmentPage() {
-  const flat = useApartment();
+  const flat = useLogement();
 
   if (flat == null) return <div>Loading...</div>;
   return (
